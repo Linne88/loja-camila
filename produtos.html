@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Minha Loja Virtual</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Mesmo header da página inicial -->
+    </header>
+
+    <main>
+        <h1>Nossos Produtos</h1>
+        
+        <div class="filtros">
+            <select id="categoria">
+                <option value="todos">Todas as categorias</option>
+                <option value="eletronicos">Eletrônicos</option>
+                <option value="roupas">Roupas</option>
+                <option value="livros">Livros</option>
+            </select>
+            
+            <select id="ordenar">
+                <option value="relevancia">Mais relevantes</option>
+                <option value="menor-preco">Menor preço</option>
+                <option value="maior-preco">Maior preço</option>
+            </select>
+        </div>
+
+        <div class="produtos-container">
+            <div class="produto">
+                <img src="produto1.jpg" alt="Produto 1">
+                <h3>Produto 1</h3>
+                <p class="preco">R$ 99,90</p>
+                <p class="descricao">Descrição breve do produto 1</p>
+                <button class="adicionar-carrinho" data-id="1">Adicionar ao Carrinho</button>
+            </div>
+            
+            <!-- Mais produtos seriam listados aqui -->
+        </div>
+    </main>
+
+    <footer>
+        <!-- Mesmo footer da página inicial -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

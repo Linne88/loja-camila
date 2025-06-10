@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Minha Loja Virtual</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Mesmo header da página inicial -->
+    </header>
+
+    <main>
+        <h1>Seu Carrinho</h1>
+        
+        <div class="carrinho-container">
+            <div class="itens-carrinho">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
+                            <th>Total</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="carrinho-itens">
+                        <!-- Itens do carrinho serão carregados dinamicamente -->
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="resumo-carrinho">
+                <h2>Resumo do Pedido</h2>
+                <div class="resumo-item">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">R$ 0,00</span>
+                </div>
+                <div class="resumo-item">
+                    <span>Frete:</span>
+                    <span id="frete">R$ 0,00</span>
+                </div>
+                <div class="resumo-item total">
+                    <span>Total:</span>
+                    <span id="total">R$ 0,00</span>
+                </div>
+                
+                <div class="opcoes-envio">
+                    <h3>Opções de Envio</h3>
+                    <select id="metodo-envio">
+                        <option value="correios">Correios - R$ 15,00</option>
+                        <option value="expresso">Expresso - R$ 25,00</option>
+                        <option value="retirar">Retirar na Loja - Grátis</option>
+                    </select>
+                </div>
+                
+                <button id="finalizar-compra" class="btn-primary">Finalizar Compra</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Mesmo footer da página inicial -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
